@@ -125,7 +125,7 @@ var incrementReviews = function(r){
 };
 
 var combine = function(a, b){
-  return "a " + "b";
+  return  a + " " + b;
 };
 /**
  * Joins two strings with a space.
