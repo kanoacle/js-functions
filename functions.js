@@ -32,9 +32,29 @@ var square = function(x){
   return x * x;
 };
 
-var calculate = function(add, x, y){
-  var result = x + y;
-  console.log(x + " + " + y + " = " + result);
+var calculate = function(op, x, y){
+  var result = null;
+
+  switch(op){
+    case "add":
+      result = x + y;
+      operator = " + ";
+      break;
+    case "subtract":
+      result = x - y;
+      operator = " - ";
+      break;
+    case "multiply":
+      result = x * y;
+      operator = " * ";
+      break;
+    case "divide":
+      result = x / y;
+      operator = " / ";
+      break;
+  }
+  var answer = x + operator + y + " = " + result;
+  console.log(answer);
   return result;
 };
 /**
